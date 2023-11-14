@@ -1,9 +1,17 @@
+import Balance from "./components/Balance";
+import Header from "./components/Header";
+import Transaction from "./components/TransactionForm";
+import { GlobalProvider } from "./context/globalState";
+
 function App() {
   return (
-    <div>
-      <h3>Hola Mundo</h3>
-    </div>
+    <GlobalProvider>
+      <Header/>
+      <Transaction/>
+      <Balance/>
+      <h3>Que esta paasaaandaaa?</h3>
+    </GlobalProvider>
   )
 }
 
-export default App
+export default App;
