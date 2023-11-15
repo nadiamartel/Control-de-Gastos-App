@@ -7,6 +7,7 @@ function TransactionList() {
 
     return (
         <div>
+            <h4>Lista de transacciones:</h4>
             {
                 transactions.map(transaction => (
                     <section key={transaction.id}>
@@ -20,7 +21,6 @@ function TransactionList() {
                     </section>
                 ))
             }
-            <h5>Lista de transacciones</h5>
         </div>
     )
 }

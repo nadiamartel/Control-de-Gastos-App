@@ -12,14 +12,14 @@ function Transaction() {
         addTransaction({
             id: window.crypto.randomUUID(),
             description,
-            amount
+            amount: +amount //para convertirlo de str a num
         }); 
         console.log(description, amount);
     }
 
     return(
         <div>
-            <h4>Para agregar las transacciones</h4>
+            <h4>Agregar las transacciones:</h4>
             <form onSubmit={onSubmit}>
                 <input type="text" placeholder="Agregar descripcion"
                     onChange={(event) => setDescription(event.target.value)}
@@ -28,7 +28,7 @@ function Transaction() {
                     onChange={(event) => setAmount(event.target.value)}
                 />
                 <button>
-                    Añadir Transaccion
+                    Añadir
                 </button>
             </form>
         </div>
