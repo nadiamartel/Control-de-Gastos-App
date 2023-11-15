@@ -1,15 +1,16 @@
 import Balance from "./components/Balance";
 import Header from "./components/Header";
-import Transaction from "./components/TransactionForm";
-import { GlobalProvider } from "./context/globalState";
+import Transaction from "./components/Transactions/TransactionForm";
+import TransactionList from "./components/Transactions/TransactionList";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
     <GlobalProvider>
       <Header/>
       <Transaction/>
+      <TransactionList/>
       <Balance/>
-      <h3>Que esta paasaaandaaa?</h3>
     </GlobalProvider>
   )
 }
