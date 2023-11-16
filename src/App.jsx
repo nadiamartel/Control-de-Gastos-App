@@ -8,11 +8,15 @@ import { GlobalProvider } from "./context/GlobalState";
 function App() {
   return (
     <GlobalProvider>
-      <Header/>
-      <Movements/>
-      <Balance/>
-      <Transaction/>
-      <TransactionList/>
+      <div className="bg-zinc-900 text-white h-screen flex justify-center items-center">
+        <div className="bg-zinc-800">
+          <Header />
+          <Movements />
+          <Balance />
+          <Transaction />
+          <TransactionList />
+        </div>
+      </div>
     </GlobalProvider>
   )
 }
