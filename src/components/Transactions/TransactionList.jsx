@@ -9,11 +9,13 @@ function TransactionList() {
     return (
         <div>
             <h4>Lista de transacciones:</h4>
-            {
-                transactions.map(transaction => (
-                   <TransactionItem transaction={ transaction } key={transaction.id}/>
-                ))
-            }
+            <ul>
+                {
+                    transactions.map(transaction => (
+                        <TransactionItem transaction={transaction} key={transaction.id} />
+                    ))
+                }
+            </ul>
         </div>
     )
 }
