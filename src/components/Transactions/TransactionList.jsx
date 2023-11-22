@@ -8,7 +8,7 @@ function TransactionList() {
 
     return (
         <div>
-            <h4>Lista de transacciones:</h4>
+            <h4 className="text-slate-300 text-xl font-bold block">Lista de transacciones:</h4>
             <ul>
                 {
                     transactions.map(transaction => (

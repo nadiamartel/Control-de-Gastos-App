@@ -9,9 +9,9 @@ function Balance(){
     const total = amounts.reduce((accumulated, item) => (accumulated +=item), 0) //cero como valor inicial, ver el comportamiento del array
     
     return(
-        <div>
+        <div className="flex">
             <h4>Balance</h4>
-            <h2>${total}</h2>
+            <h2 className="font-bold">${total}</h2>
         </div>
     )
 }
