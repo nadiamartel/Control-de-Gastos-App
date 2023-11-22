@@ -1,4 +1,5 @@
 import Balance from "./components/Balance";
+import ExpenseChart from "./components/ExpenseChart";
 import Header from "./components/Header";
 import Movements from "./components/Movements";
 import Transaction from "./components/Transactions/TransactionForm";
@@ -33,6 +34,7 @@ function App() {
               </div>
               <div className="flex-1 flex flex-col">
                 <TransactionList />
+                <ExpenseChart/>
               </div>
             </div>
           </div>

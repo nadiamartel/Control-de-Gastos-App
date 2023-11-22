@@ -1,8 +1,8 @@
 
 function Header() {
-    return(
-        <div>
-            <h4>Header</h4>
+    return (
+        <div className="text-4xl font-bold text-center my-5">
+            Control de Gastos
         </div>
     )
 }

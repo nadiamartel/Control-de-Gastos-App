@@ -16,12 +16,12 @@ function Movements() {
 
     return (
         <div>
-            <section>
+            <section className="flex justify-between my-2">
                 <h4>Ingresos</h4>
                 <p>${income}</p>
             </section>
 
-            <section>
+            <section className="flex justify-between my-2">
                 <h4>Egresos</h4>
                 <p>${expense}</p>
             </section>
